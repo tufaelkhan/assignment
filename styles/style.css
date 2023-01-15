@@ -189,6 +189,50 @@
     font-size: 18px;
     color: #727272;
 }
+/* contact styles */
+.flow-us{
+    font-size: 30px;
+    text-align: center;
+    color: #131313;
+}
+.flow{
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+    background-color: antiquewhite;
+    margin: 50px 200px;
+}
+.social{
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+.form{
+    padding: 20px 20px;
+    border: 0;
+}
+.email{
+    border: 0;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.password{
+    border: 0;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.btn-primary-down{
+    border-radius: 10px;
+    border: 0;
+    padding: 15px 20px;
+    background-color: rgb(242, 180, 10);
+    color: #FFF;
+    font-size: 18px;
+    justify-content: center;
+    
+}
 /* sponsers styles */
 .sponsers{
     text-align: center;
@@ -211,5 +255,73 @@
     background-color: rgba(247, 65, 10, 0.1);
     text-align: center;
     padding: 20px;
-    margin: 0px 200px;
+    margin: 20px 200px;
+}
+/* media quary */
+@media screen and (max-width:688px) {
+    body{
+        margin: 50px 20px 20px 20px;
+    }
+    .navbar, .header-title, .header-description, .btn-primary-top, .header-img, .fetures{
+        flex-direction: column;
+        margin: -10px -100px 30px -220px;
+    }
+    .quick, .all-item{
+        flex-direction: column;
+        margin: 0px 0px 0px 0px;
+    }
+    .quick-title{
+        margin: 0 140px 10px -450px ;
+    }
+    .header-img{
+        width: 100%; 
+    }
+    .full-section{
+        flex-direction: column;
+        margin: 0px 1030px 20px 0px;
+    }
+    .full-love{
+        margin-right: 1030px ;
+    }
+    .fact{
+        margin: 1100px 150px 20px -20px ;
+        text-align: center;
+    }
+    .icons{
+        flex-direction: column;
+        margin: 0px 200px 20px -50px ;
+    }
+    .icon{
+        margin-bottom: 20px;
+    }
+    .flow-us{
+        justify-content: center;
+        margin-right: 160px;
+    }
+    .contact{
+        justify-content: center;
+    }
+    .flow{
+        flex-direction: column;
+        margin: 0px 160px 0px 0px;
+  
+    }
+    .form{
+        padding-top: -1000px;
+    }
+    .sponsers-title{
+        margin-right: 160px;
+    }
+    .sponsers-description{
+        margin: 0px 200px 20px 30px;
+        text-align: center;
+    }
+    .sponsers-name{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        margin-right: 500px;
+    }
+    .foot{
+        margin-left:0px;
+    }
 }
